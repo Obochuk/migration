@@ -1,0 +1,23 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet author="vladyslav" id="4">
+        <insert tableName="company">
+            <column name="id" value="1"/>
+            <column name="name" value="EPAM"/>
+            <column name="debt" valueNumeric="6000"/>
+            <column name="income" valueNumeric="2000"/>
+        </insert>
+        <insert tableName="company">
+            <column name="id" value="2"/>
+            <column name="name" value="MAPE"/>
+            <column name="debt" valueNumeric="4000"/>
+            <column name="income" valueNumeric="6000"/>
+        </insert>
+        <insert tableName="company">
+            <column name="id" value="3"/>
+            <column name="name" value="PMAM"/>
+            <column name="debt" valueNumeric="2000"/>
+            <column name="income" valueNumeric="120000"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
